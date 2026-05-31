@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#121212">
+
+    <TextView
+        android:text="🎰 Spin Pattern Tracker"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:text="স্বয়ংক্রিয় স্ক্রিন স্ক্যানার"
+        android:textSize="14sp"
+        android:textColor="#AAAAAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:text="চালু করতে নিচের বাটন চাপুন"
+        android:textSize="14sp"
+        android:textColor="#FFD700"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:text="▶ ট্র্যাকার চালু করুন"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:backgroundTint="#1D9E75"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:text="⏹ ট্র্যাকার বন্ধ করুন"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:backgroundTint="#993C1D"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:text="⚠️ এটি শুধু পরিসংখ্যান টুল — পূর্বাভাস নয়"
+        android:textSize="11sp"
+        android:textColor="#666666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>

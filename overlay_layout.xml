@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#E6121212"
+    android:padding="0dp">
+
+    <!-- হেডার বার -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#1D9E75"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="4dp">
+
+        <TextView
+            android:text="🎰 SpinTracker"
+            android:textSize="11sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnMinimize"
+            android:text="▲"
+            android:textSize="10sp"
+            android:textColor="#FFFFFF"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="0dp"/>
+    </LinearLayout>
+
+    <!-- কনটেন্ট -->
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:text="👁 অপেক্ষায়..."
+            android:textSize="11sp"
+            android:textColor="#FFD700"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:id="@+id/tvLastEvent"
+            android:text="শেষ: —"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvSpinCount"
+            android:text="স্পিন: ০"
+            android:textSize="14sp"
+            android:textColor="#5DCAA5"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:id="@+id/tvAvg"
+            android:text="গড়: —"
+            android:textSize="12sp"
+            android:textColor="#AAAAAA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCapture"
+                android:text="📷 স্ক্যান"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:backgroundTint="#185FA5"
+                android:layout_marginEnd="4dp"
+                android:padding="2dp"/>
+
+            <Button
+                android:id="@+id/btnReset"
+                android:text="🔄 রিসেট"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:backgroundTint="#533AB7"
+                android:padding="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
